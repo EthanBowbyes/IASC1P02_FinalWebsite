@@ -1,0 +1,309 @@
+/*
+Sources
+https://www.w3schools.com/
+https://www.geeksforgeeks.org
+https://tutorialzine.com
+https://www.quackit.com/
+https://developer.mozilla.org
+*/
+
+/*Blinking Warning*/
+#wink {
+	color: red;	
+	font-size: 150%;
+}
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+    animation: 2s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect { // for android
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+/*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink*/
+
+/*Splitting up Sections on Website*/
+hr {
+	border-width: 1px;
+	border-color: red;
+	}
+/*Navigation Bar Style*/
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: white;
+    position: fixed;
+    top: 0;
+	}
+
+.nav2{
+    float: left;
+	}
+
+li a {
+    display: inline-block;
+    color: #3c8d0d;
+    text-align: center;
+    padding: 18px 177px;
+    text-decoration: none;
+	font-size: 300%;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	}
+a:hover {
+    color: #c80000;
+}
+#redmint:hover {
+	background-image: url("Mint.png");
+}
+/*https://www.w3schools.com/css/css_navbar.asp*/
+
+/*Countdown*/
+} 
+ #clockdiv{ 
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 50px; 
+} 
+#clockdiv > div{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    background: #00BF96; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 15px; 
+    border-radius: 3px; 
+    background: #00816A; 
+    display: inline-block; 
+/* https://www.geeksforgeeks.org/create-countdown-timer-using-javascript/*/
+} 
+smalltext{ 
+    padding-top: 5px; 
+    font-size: 50px; 
+} 
+
+.reminder{
+	color: #3c8d0d;
+	font-size: 300%;
+}
+
+/*Footer*/
+.footer-distributed h3{
+	color: #3c8d0d;
+	font-size: 50px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed{
+	background-color: white;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	border-style: solid;
+    border-color: #c80000;
+	border-width: 5px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 30px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	float: center;
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	float: center;
+	font-size:18px;
+	font-weight: bold;
+	color: #c80000;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	float: center;
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .SocialMedia{
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .SocialMedia{
+		text-align: center;
+	}
+
+	.footer-distributed .SocialMedia{
+		float: center;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+p img {
+	border: #c80000 3px solid; 
+}
+/*https://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates
+*/
+
+#hide{
+    visibility: hidden;
+}
+
+/*Desserts Page*/
+#green {
+	color: #3c8d0d;
+}
+#bigger {
+	font-size: 130%
+}
+#big {
+	font-size: 120%
+}
+h3, h2, pre, li, p {
+font-family: Arial, Helvetica, sans-serif;
+}
+p{
+	font-size: 160%
+}
+pre{
+	font-size: 120%
+}
+
+.box{
+	margin-top:20px;
+	margin-right:10%;
+	margin-bottom:20px;
+	margin-left:10%;
+	border: #3c8d0d 3px dashed; 
+	padding-top: 10px;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-left: 10%;
+} 
+/*Traditions Page*/
+.box2{
+	margin-top:20px;
+	margin-right:10%;
+	margin-bottom:20px;
+	margin-left:10%;
+    border: 10px outset red;	
+	padding-top: 10px;
+    padding-right: 5%;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+.box3{
+	margin-top:20px;
+	margin-right:10%;
+	margin-bottom:20px;
+	margin-left:10%;
+	border: 10px double #3c8d0d;
+	padding-top: 10px;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-left: 10%;
+} 
+.box4{
+	margin-top:20px;
+	margin-right:10%;
+	margin-bottom:20px;
+	margin-left:10%;
+	border: 10px double white;
+	padding-top: 10px;
+    padding-right: 23%;
+    padding-bottom: 10px;
+    padding-left: 23%;
+} 
+/* .box5{
+	float: center;
+	margin-top:20px;
+	margin-right:900px;
+	margin-bottom:20px;
+	margin-left:900px;
+	background-color: #3c8d0d;
+	padding-top: 10px;
+    padding-right: 0%;
+    padding-bottom: 10px;
+    padding-left: 0%; 
+}*/
+/*border: #3c8d0d 3px dashed; */
+
+/*About Page*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #3c8d0d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/*https://www.w3schools.com/howto/howto_css_contact_form.asp*/

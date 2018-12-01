@@ -1,0 +1,335 @@
+<!--
+sources:
+https://www.w3schools.com/
+https://www.geeksforgeeks.org
+https://tutorialzine.com
+https://developer.mozilla.org
+www.htmlfreecodes.com
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="en-us" http-equiv="Content-Language" /> 
+		<title> Home </title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="scripts.js"></script>
+	</head>
+
+	<body>
+<!--NAVIGATION BAR-->
+	<a name = "Top"> </a>
+	<div>
+	<ul class="nav">
+    <li class="nav2"><a class="active" href="Home Page.html">Home</a></li>
+    <li class="nav2"><a href="Food.html">Desserts</a></li>
+    <li class="nav2"><a href="Traditions.html">Traditions</a></li>
+    <li class="nav2"><a href="About.html">About</a></li>
+	<br/><br/><br/><br/><b/>
+	<hr></hr>
+	</ul>
+	</div>
+<!--HEADER-->
+	<br/><br/><br/><br/><br/>
+	<div>
+    <center><a href="Home Page.html"><img src="Header.png" alt="logo"/></a></center>
+	<hr></hr>
+	</div>
+	
+<!--CONTENT-->
+	<div> <center>
+	<p id="wink"><blink>**WARNING! IF YOU DO NOT LIKE CHRISTMAS, PLEASE EXIT IMMEDIATELY**</blink></p>
+	<br/><br/>
+	</center></div>
+
+	<div> <center>
+	<img src="Mint.png" alt="logo"/>
+    <img src="Christmas Countdown.png" alt="logo"/>
+	<img src="Mint.png" alt="logo"/>
+	<center>
+	<script LANGUAGE="JavaScript">
+<!-- Begin
+monthnames = new Array(
+"January",
+"Februrary",
+"March",
+"April",
+"May",
+"June",
+"July",
+"August",
+"September",
+"October",
+"November",
+"Decemeber");
+var linkcount=0;
+function addlink(month, day, href) {
+var entry = new Array(3);
+entry[0] = month;
+entry[1] = day;
+entry[2] = href;
+this[linkcount++] = entry;
+}
+Array.prototype.addlink = addlink;
+linkdays = new Array();
+monthdays = new Array(12);
+monthdays[0]=31;
+monthdays[1]=28;
+monthdays[2]=31;
+monthdays[3]=30;
+monthdays[4]=31;
+monthdays[5]=30;
+monthdays[6]=31;
+monthdays[7]=31;
+monthdays[8]=30;
+monthdays[9]=31;
+monthdays[10]=30;
+monthdays[11]=31;
+todayDate=new Date();
+thisday=todayDate.getDay();
+thismonth=todayDate.getMonth();
+thisdate=todayDate.getDate();
+thisyear=todayDate.getYear();
+thisyear = thisyear % 100;
+thisyear = ((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+if (((thisyear % 4 == 0) 
+&& !(thisyear % 100 == 0))
+||(thisyear % 400 == 0)) monthdays[1]++;
+startspaces=thisdate;
+while (startspaces > 7) startspaces-=7;
+startspaces = thisday - startspaces + 1;
+if (startspaces < 0) startspaces+=7;
+document.write("<table border=2 bgcolor=white ");
+document.write("bordercolor=black><font color=black>");
+document.write("<tr><td colspan=7><center><strong>" 
++ monthnames[thismonth] + " " + thisyear 
++ "</strong></center></font></td></tr>");
+document.write("<tr>");
+document.write("<td align=center>Su</td>");
+document.write("<td align=center>M</td>");
+document.write("<td align=center>Tu</td>");
+document.write("<td align=center>W</td>");
+document.write("<td align=center>Th</td>");
+document.write("<td align=center>F</td>");
+document.write("<td align=center>Sa</td>"); 
+document.write("</tr>");
+document.write("<tr>");
+for (s=0;s<startspaces;s++) {
+document.write("<td> </td>");
+}
+count=1;
+while (count <= monthdays[thismonth]) {
+for (b = startspaces;b<7;b++) {
+linktrue=false;
+document.write("<td>");
+for (c=0;c<linkdays.length;c++) {
+if (linkdays[c] != null) {
+if ((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count)) {
+document.write("<a href=\"" + linkdays[c][2] + "\">");
+linktrue=true;
+      }
+   }
+}
+if (count==thisdate) {
+document.write("<font color='FF0000'><strong>");
+}
+if (count <= monthdays[thismonth]) {
+document.write(count);
+}
+else {
+document.write(" ");
+}
+if (count==thisdate) {
+document.write("</strong></font>");
+}
+if (linktrue)
+document.write("</a>");
+document.write("</td>");
+count++;
+}
+document.write("</tr>");
+document.write("<tr>");
+startspaces=0;
+}
+document.write("</table></p>");
+// End -->
+	</script>
+	</center>
+
+	<div id="clockdiv"> 
+  <div> 
+    <span class="days" id="day"></span> 
+    <div class="smalltext">Days</div> 
+  </div> 
+  <div> 
+    <span class="hours" id="hour"></span> 
+    <div class="smalltext">Hours</div> 
+  </div> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <div class="smalltext">Minutes</div> 
+  </div> 
+  <div> 
+    <span class="seconds" id="second"></span> 
+    <div class="smalltext">Seconds</div> 
+  </div> 
+</div> 
+
+	<p id="demo"></p>
+	<br/><br/><br/>
+	
+	<img src="Mint.png" alt="logo"/>
+	<img src="Letter To Santa.png" alt="logo"/>
+	<img src="Mint.png" alt="logo"/>
+	<div class="box4"><center>
+	<form action="Send Letter">
+	<textarea name="LifeStory" rows="15" cols="50" id="letter"> Dear Santa, </textarea>
+	<br/><br/>
+	<input type="text" name="name" id="name" value="Enter Your Name" /> 
+	</form>
+	<br/>
+	<button type="submit" onclick="SendLetter()"> Send Letter </button>
+    </center> </div>	
+	<br/><br/>
+	
+	<img src="Mint.png" alt="logo"/>
+	<img src="Christmas Story Of The Week.png" alt="logo"/>
+	<img src="Mint.png" alt="logo"/>
+	<h3 id="bigger"> The Legend of The Christmas Tree </h3>
+	<pre>
+	Two little children were sitting by the fire one cold winter's night. All at once they heard a timid knock at 
+	the door, and one ran to open it.
+
+	There, outside in the cold and the darkness, stood a child with no shoes upon his feet and clad in thin, 
+	ragged garments. He was shivering with cold, and he asked to come in and warm himself.
+
+	"Yes, come," cried both the children; "you shall have our place by the fire. Come in!"
+
+	They drew the little stranger to their warm seat and shared their supper with him, and gave him their bed, 
+	while they slept on a hard bench.
+
+	In the night they were awakened by strains of sweet music and, looking out, they saw a band of children 
+	in shining garments approaching the house. They were playing on golden harps, and the air was full of 
+	melody.
+
+	Suddenly the Stranger Child stood before them; no longer cold and ragged, but clad in silvery light.
+
+	His soft voice said: "I was cold and you took Me in. I was hungry, and you fed Me. I was tired, and you 
+	gave Me your bed. I am the Christ Child, wandering through the world to bring peace and happiness to 
+	all good children. As you have given to Me, so may this tree every year give rich fruit to you."
+
+	So saying, He broke a branch from the fir tree that grew near the door, and He planted it in the ground 
+	and disappeared. But the branch grew into a great tree, and every year it bore wonderful golden fruit for 
+	the kind children.
+	</pre>
+	<!--http://www.free-short-stories.org.uk/the-legend-of-the-christmas-tree.htm-->
+	<br/>
+	
+	<img src="Mint.png" alt="logo"/>
+	<img src="Popular Gifts.png" alt="logo"/>
+	<img src="Mint.png" alt="logo"/>
+	<br/><br/> 
+	<a href="https://www.amazon.com/L-L-Surprise-Glitter-Surprises/dp/B07BHQ14L9/ref=zg_bs_toys-and-games_1/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank"> <img src="Toys\L.O.L Suprise.jpg" alt="toy1" title="toy"/> </a>
+	<a href="https://www.amazon.com/Wooden-Blocks-Stacking-Tumbling-Exclusive/dp/B000GBA60W/ref=zg_bs_toys-and-games_2/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank"> <img src="Toys\Jenga.jpg" alt="toy2"/> </a>
+	<a href="https://www.amazon.com/Nerf-N-Strike-Elite-Strongarm-Blaster/dp/B00DW1JT5G/ref=zg_bs_toys-and-games_8/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank"> <img src="Toys\Nerf.jpg" alt="toy3"/> </a>
+	<a href="https://www.amazon.com/Hasbro-A5640-Connect-4-Game/dp/B00D8STBHY/ref=zg_bs_toys-and-games_11/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank">  <img src="Toys\Connect 4.jpg" alt="toy4"/> </a>
+	<br/><br/>
+	<a href="https://www.amazon.com/Melissa-Doug-Scratch-Rainbow-Wooden/dp/B005K0B8WO/ref=zg_bs_toys-and-games_13/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank"> <img src="Toys\Craft.jpg" alt="toy5"/> </a>
+	<a href="https://www.amazon.com/UNO-42003-Card-Game/dp/B00004TZY8/ref=zg_bs_toys-and-games_18/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank"> <img src="Toys\Uno.jpg" alt="toy6"/> </a>
+	<a href="https://www.amazon.com/Masks-Vehicle-Cat-Boy-Car/dp/B01HXND5XK/ref=zg_bs_toys-and-games_20/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank"> <img src="Toys\Blue Toy.jpg" alt="toy7"/> </a>
+	<a href="https://www.amazon.com/What-Do-You-Meme-Party/dp/B01MRG7T0D/ref=zg_bs_toys-and-games_19/144-4305758-9055033?_encoding=UTF8&psc=1&refRID=265057RYZYQ9VE02V20Z"
+	target="_blank">  <img src="Toys\Meme.jpg" alt="toy8"/> </a>
+	<br/><br/><br/><br/>
+   
+	</center> </div>
+	<div> <center> 
+	<img src="Mint.png" alt="logo"/>
+	<img src="Christmas Reminders.png" alt="logo"/>
+	<img src="Mint.png" alt="logo"/>
+	<br/>
+	<font class="reminder"><strong>Remember</strong> to drink a lot of hot chocolate!</font>
+	<br/>
+    <font class="reminder"><strong>Remember</strong> to spend time with family!</font>
+	<br/>
+    <font class="reminder"><strong>Remember</strong> to leave cookies out for Santa!</font>
+	<br/><br/><br/><br/>
+	
+	<img src="Mint.png" alt="logo"/>
+	<img src="Christmas Calculator.png" alt="logo"/>
+	<img src="Mint.png" alt="logo"/>
+	<div class="box4">
+	<h2> How many Christmas's have you been alive for? </h2>
+	<form>
+	<input type="text" name="age" id="year" value="Enter Your Birth Year" />
+	</form>
+	<h2 id="cCalc"> </h2>
+	<br/>
+	<button type="submit" onclick="CCalc()"> Submit </button>
+	<br/>
+	<embed id="hide" name="BMusic" src="Background.mp3" loop="false" hidden="true" autostart="true"/>
+	<center>
+    <a href = "#Top"><font color="#c80000">Back To Top </font></a>
+	</center>
+	</center></div>
+	
+<!--FOOTER-->
+		<footer class="footer-distributed">
+			<div class="SocialMedia">
+				<a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"><img src="Social\Facebook.png" alt="logo"/></a>
+				<a href="https://twitter.com/" class="fa fa-twitter" target="_blank"><img src="Social\Twitter.png" alt="logo"/></a>
+				<a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"><img src="Social\YouTube.png" alt="logo"/></a>
+				<a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" target="_blank"><img src="Social\Instagram.png" alt="logo"/></a>
+			</div>
+			<div class="footer-left">
+			<h3>Ho Ho Holiday</h3>
+				<p class="footer-links">
+					<a href="Home Page.html">Home</a>
+					·
+					<a href="About.html">About</a>
+					·
+					<a href="About.html #Con">Contact</a>
+					·
+					<a href="About.html #FAQ">FAQ</a>
+				</p>
+				<p>&copy; 2000-2018</p>
+			</div>
+		</footer>
+<!--Photo Citations:
+Toys
+https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games
+Desserts
+https://www.countryliving.com/food-drinks/g1036/easy-christmas-desserts/
+Facebook
+http://www.stickpng.com/assets/images/58e91965eb97430e819064f5.png
+Twitter
+https://www.clipartmax.com/png/middle/124-1242173_hi-im-rachel-twitter-icon-flat-circle.png
+
+Youtube
+https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-youtube-circle-512.png
+Instagram
+http://ensaioexterno.com.br/wp-content/uploads/2018/03/if_social-instagram-new-circle_1164349.png
+Tree
+https://i.pinimg.com/originals/52/d0/6b/52d06b9b7e7820c1f4fd55c204c0cee6.png
+Lights
+https://clipart.info/images/ccovers/1509727027cartoon-christmas-lights-png-clip-art.png
+Card 
+https://cdn.shopify.com/s/files/1/0039/6912/products/Doggie-Tree-Shopping_large.png?v=1537289955
+Gift 
+https://banner2.kisspng.com/20180217/uow/kisspng-christmas-gift-christmas-gift-clip-art-cartoon-present-cliparts-5a88e516c19564.3590908115189209827929.jpg
+Stocking
+https://i.pinimg.com/originals/9b/5c/81/9b5c812bd322e0e7088358be71a90db0.jpg
+Reindeer
+https://i.pinimg.com/originals/7f/fd/c1/7ffdc1d52e223ee3559341186dd80656.jpg
+-->
+	</body>
+</html>
